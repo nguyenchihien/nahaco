@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Semantic Web Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css">
+    
+</head>
+<body>
+<!-- SECTION FIXED NAVBAR -->
+<div class="ui four item inverted stackable menu red">
+    <div class="active header item">
+        Our Company
+    </div>
+    <a class="item">
+        About Us
+    </a>
+    <a class="item">
+        Jobs
+    </a>
+    <a class="item">
+        Locations
+    </a>
+</div>
+        
+<!-- section 1  -->
+<section class="ui center aligned container-fluid">
+    <div style="color:white; margin-top:-14px; padding-top:40px; height:600px; background:url(parallax.jpg)">
+    
+        <div class="ui center aligned container">
+            <h1>Landing Pages</h1>
+            <h2>This is a landing page for your org</h2>
+            <p></p>
+        </div>
+
+        <div class="ui stackable grid container">
+            <div class="six wide column">
+                <div class="ui segment">
+                </div>
+            </div>
+            <div class="ten wide column">
+                <div class="ui segment">
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h2 class="ui horizontal divider header">
+  <i class="tag icon"></i>
+  Over 1000+..
+</h2>
+
+<!-- bx slider -->
+<section>
+    <div class="slider1">
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+    </div>
+</section>
+
+<h2 class="ui horizontal divider header">
+    <i class="tag icon"></i>
+    Description
+</h2>
+
+<section class="ui center aligned container">
+</section>
+
+
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slider1').bxSlider({
+            captions: true, 
+            slideWidth: 210,
+            minSlides: 2,
+            maxSlides: 4,
+            slideMargin: 10
+        });
+    });
+
+</script>
+          
+

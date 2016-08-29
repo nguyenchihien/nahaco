@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Web Design</title>
+    <title>Materialize Web Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css">
     
 </head>
 <body>
@@ -30,18 +30,67 @@
 </ul>
         
 <!-- section 1  -->
+
+<div class="parallax-container" style="height:600px;">
+    <div class="parallax"><img src="parallax.jpg"></div>
+    <section class="white-text center">
+        <h1>Landing Pages</h1>
+        <h2>This is a landing page for your org</h2>
+    </section>
+    <div class="row container">
+        <div class="col s12 m5">
+            <div class="card-panel">
+            </div>
+        </div>
+        <div class="col s12 m7">
+            <div class="card-panel">
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="center">
+    <h2>Over 100+ customers ...</h2>
+</section>
+    
+<!-- bxslider -->
 <section>
+    <div class="slider1">
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+        <div class="slide">
+            <img src="http://strategyteamshow.com/timthumb.php?src=upload/images/quay-phim-demo-cho-teamshow.jpg&w=360&h=288&zc=1&a=tc" title="Teamshow Saigon" alt="Teamshow" >
+        </div>
+    </div>
 </section>
 
+<div class="divider"></div>
+
+<section></section>
 
 </body>
 </html>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 <script>
     $(document).ready(function(){
         $(".dropdown-button").dropdown();
+        $('.parallax').parallax();
+        $('.slider1').bxSlider({
+            captions: true, 
+            slideWidth: 210,
+            minSlides: 2,
+            maxSlides: 4,
+            slideMargin: 10
+        });
     });
 
 </script>
